@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freezing Point Depression Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="temperatureChangeRadio" name="variables" checked>
+  <label for="temperatureChangeRadio">Temperature Change</label>
+
+  <input type="radio" id="vantHoffFactorRadio" name="variables">
+  <label for="vantHoffFactorRadio">Van't Hoff Factor</label>
+
+  <input type="radio" id="cryoscopicConstantRadio" name="variables">
+  <label for="cryoscopicConstantRadio">Cryoscopic Constant</label>
+
+  <input type="radio" id="molalityoftheSolutionRadio" name="variables">
+  <label for="molalityoftheSolutionRadio">Molality of the Solution</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(i) Van't Hoff Factor</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(kf) Cryoscopic Constant (kg/mol)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(m) Molality of the Solution (mol/kg)</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
